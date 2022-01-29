@@ -42,8 +42,10 @@ public class AlejandroApplication {
 
     public static void sudoku() {
         Sudoku sudoku = new Sudoku();
-        sudoku.setCuadrantes(sudoku.getDataCuboArmado());
+        sudoku.imprimirTablero();
         sudoku.validarSudoku();
+        System.out.println("\nEjercicio de sudoku");
+        System.out.println("El suduko es: " + (sudoku.getResuelto() ? "Correcto" : "Incorrecto"));
 
     }
 }
